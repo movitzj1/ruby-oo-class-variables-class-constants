@@ -6,9 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if BRANDS.index(brand) == nil
-      BRANDS << brand
-    end
+    BRANDS << brand if BRANDS.index(brand) == nil
   end
 
   def cobble
